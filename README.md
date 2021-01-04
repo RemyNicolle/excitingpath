@@ -2,6 +2,13 @@
 
 Get the list of annotations from desired databases from [enrichR](https://amp.pharm.mssm.edu/Enrichr/#stats) and [MSigDB](http://software.broadinstitute.org/gsea/msigdb/index.jsp)
 
+## install
+install directly from the github
+```R
+library(devtools)
+install_github("RemyNicolle/excitingpath")
+```
+
 # How to use
 
 Returns the list of availables databases in package
@@ -74,17 +81,5 @@ loadDB("TF")
 
 Any combination of above keywords and databases names is possible.
 
-## install
-Dependencies 
-```R
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("qusage")
-```
-
-install directly from the CIT gitlab
-```R
-devtools::install_url("https://gitlab.ligue-cancer.net/nicolas.poulain/excitingpath/-/archive/master/excitingpath-master.tar.gz")
-```
 
 
